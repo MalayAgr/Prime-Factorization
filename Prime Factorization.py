@@ -98,12 +98,12 @@ def main():
             #if the number of factors is more than 1
             #uses reduce to print them as: 2 x 2 x 3 x ...
             if len(primeFactors) > 1:
-                print("\nThe prime factorization is: %s" %reduce(lambda x, y: str(x) + ' x ' + str(y), primeFactors))
+                print(f"\nThe prime factorization is: {reduce(lambda x, y: str(x) + ' x ' + str(y), primeFactors)}")
 
             #if only one factor (meaning number is prime)
             #simply prints it
             else:
-                print("\nThe prime factorization is: %s" %primeFactors[0])
+                print(f"\nThe prime factorization is: {primeFactors[0]}")
 
             #asks user whether they would like to factorize another number
             #if no, sets repeat to False
